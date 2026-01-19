@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Keyw Ael' | Full Responsive</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7eff29",
+                        "brutal-black": "#000000",
+                        "brutal-white": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Archivo Black", "sans-serif"],
+                        "condensed": ["Archivo Narrow", "sans-serif"],
+                        "mono": ["Space Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .halftone-green-zine {
+                filter: grayscale(1) contrast(500%) brightness(50%) sepia(100%) hue-rotate(65deg) saturate(1000%);
+                mix-blend-mode: screen;
+            }
+            .cut-out-box {
+                background-color: black;
+                border: 4px solid white;
+                display: inline-block;
+                padding: 0 1rem;
+            }
+            .stamped-label {
+                background-color: white;
+                color: black;
+                font-family: 'Space Mono', monospace;
+                font-weight: 700;
+                padding: 4px 8px;
+                display: inline-block;
+                border: 2px solid black;
+                box-shadow: 2px 2px 0px #7eff29;
+            }
+            .industrial-tag {
+                background-color: #7eff29;
+                color: #000;
+                font-family: 'Space Mono', monospace;
+                text-transform: uppercase;
+                border: 2px solid #000;
+                padding: 0.5rem 1rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                font-weight: 700;
+                box-shadow: 4px 4px 0px #fff;
+            }
+            .paper-scrap {
+                background-color: #f3f3f3;
+                color: #000;
+                transform: rotate(-1deg);
+                box-shadow: 4px 4px 0px #7eff29;
+                border: 1px solid #ddd;
+            }
+            .distorted-title {
+                text-transform: uppercase;
+                line-height: 0.8;
+                letter-spacing: -0.05em;
+                font-family: 'Archivo Black', sans-serif;
+            }
+            .grain-overlay {
+                background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+                opacity: 0.15;
+                pointer-events: none;
+            }
+            .barcode {
+                font-family: 'Space Mono', monospace;
+                letter-spacing: -1px;
+                font-size: 10px;
+                background: white;
+                color: black;
+                padding: 2px 5px;
+            }
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Space Mono', monospace;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-brutal-black text-brutal-white antialiased overflow-x-hidden">
+<div class="grain-overlay fixed inset-0 z-[100]"></div>
+
+<header class="fixed top-0 left-0 w-full z-50 p-4 md:p-6 mix-blend-difference">
+    <div class="flex flex-col sm:flex-row items-start justify-between gap-4">
+        <div class="cut-out-box !border-2 !px-2 transform -rotate-1">
+            <span class="font-display text-lg md:text-xl text-white">KEYW AEL'</span>
+        </div>
+        <nav class="flex flex-wrap justify-end gap-1 md:flex-col md:items-end">
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#keywael">01_COVER</a>
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#kroyal">02_KROYAL</a> 
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#krabo">03_KRABO</a>
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#krabosport">04_KRABOSPORT</a>
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#support">05_SUPPORT</a>
+            <a class="stamped-label text-[10px] hover:bg-primary" href="#footer">06_FOOTER</a>    
+        </nav>
+    </div>
+</header>
+
+<main class="relative">
+    <section class="min-h-screen relative flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden" id="keywael">
+        <div class="relative z-20 w-full max-w-6xl flex flex-col gap-0">
+            <div class="flex flex-wrap gap-5 items-end">
+                <div class="cut-out-box transform -rotate-2">
+                     <h1 class="font-display text-[18vw] md:text-[12vw] leading-none text-white tracking-tighter uppercase">KEYW</h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-4 justify-end mt-[-2vw]">
+                <div class="cut-out-box transform rotate-1">
+                    <h1 class="font-display text-[22vw] md:text-[15vw] leading-none text-white tracking-tighter uppercase">AEL'</h1>
+                </div>
+            </div>
+        </div>
+        <div class="paper-scrap p-4 md:p-6 max-w-xs md:max-w-md mt-6 md:mt-[-2rem] relative z-20">
+            <div class="barcode mb-2">|||| || | ||||| || 001</div>
+            <p class="text-xs md:text-sm font-bold leading-tight">
+              KEYW AEL' REPRESENTS THE STRATEGIC AND PUBLIC FACE OF THE PROJECTS HE BUILDS, CONNECTING IDEAS, TEAMS, AND PRODUCTS INTO ONE COHERENT VISION.
+            </p>
+        </div>
+        <div class="mt-4 w-full max-w-5xl flex flex-wrap justify-center gap-4 md:gap-8 z-20">
+            <div class="flex flex-col items-center transform rotate-3">
+                <div class="stamped-label !bg-primary text-lg md:text-2xl font-display px-4 md:px-6 py-2 border-4 border-black">WEBSITE</div>
+                <span class="text-[8px] mt-1 font-mono">YOU'RE_HERE</span>
+            </div>
+            <div class="flex flex-col items-center transform -rotate-2">
+                <a href="https://kroyal.world/author/KeywAel/" target="_blank" class="stamped-label text-lg md:text-2xl font-display px-4 md:px-6 py-2 border-4 border-black">KROYAL PAGE</a>
+                <div class="barcode mt-1">A_GREAT_PLACE</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-screen relative border-t-8 border-white bg-brutal-black py-16 md:py-32 px-6" id="kroyal">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="w-full lg:w-1/2 relative">
+                <div class="cut-out-box relative z-10 transform -rotate-3">
+                    <h2 class="font-display text-[15vw] lg:text-[10rem] text-white leading-none">KROYAL</h2>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="bg-white text-black p-6 md:p-10 transform rotate-1 border-4 border-primary shadow-[10px_10px_0px_#000]">
+                    <div class="text-[10px] uppercase font-bold mb-4 border-b-2 border-black pb-2 flex justify-between">
+                        <span>Category: Premium Tier</span>
+                        <span>ID: 002-X</span>
+                    </div>
+                    <p class="text-xl md:text-2xl font-condensed font-bold leading-tight uppercase">
+                        Kroyal is a platform that allows users to create events, sell tickets, launch merchandise, manage subscriptions, and build communities.
+                    </p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="https://kroyal.world/" target="_blank" class="industrial-tag text-lg">WEBSITE</a>
+                        <a href="https://kroyal.world/author/Kroyal" target="_blank" class="border-4 border-black px-6 py-2 font-bold hover:bg-black hover:text-white transition-colors">KROYAL PAGE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-screen relative py-16 md:py-32 px-6 overflow-hidden border-t-8 border-primary" id="krabo">
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 md:gap-16 relative z-10">
+            <div class="order-2 lg:order-1 flex flex-col gap-4">
+                <div class="bg-black border-4 border-white p-6 md:p-8 transform -rotate-2">
+                    <div class="bg-primary text-black px-4 py-1 inline-block font-display text-xl md:text-2xl mb-4">HUB: KRABO</div>
+                    <p class="text-base md:text-lg font-mono leading-tight mb-4">
+                        KRABO IS A DYNAMIC PROJECT FOCUSED ON YOUTH CULTURE, MODERN CITY LIFE, AND COMMUNITY-DRIVEN ACTIVITIES.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://krabo.world/" target="_blank" class="industrial-tag bg-black text-white">WEBSITE</a>
+                        <a href="https://kroyal.world/author/KRABO" target="_blank" class="border-4 border-black px-6 py-2 font-bold hover:bg-black hover:text-white transition-colors bg-white text-black">KROYAL PAGE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex flex-col items-start lg:items-end">
+                <div class="cut-out-box transform rotate-3">
+                    <h2 class="font-display text-[18vw] lg:text-[10vw] text-white leading-[0.7]">KRABO</h2>
+                </div>
+                <div class="barcode mt-4 !bg-primary">ID: 003-X</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-screen relative bg-primary text-black py-16 md:py-32 px-6 overflow-hidden border-y-8 border-black" id="krabosport">
+        <div class="max-w-7xl mx-auto flex flex-col items-start gap-8 relative z-10">
+            <div class="bg-black text-white px-6 md:px-8 py-4 border-4 border-white transform -rotate-1">
+                <h2 class="font-display text-[10vw] md:text-[10vw] lg:text-[8rem] leading-none uppercase">KRABOSPORT</h2>
+            </div>
+            <div class="bg-white p-6 md:p-10 max-w-xl transform rotate-1 border-4 border-black shadow-[10px_10px_0px_#000]">
+                <div class="barcode mb-4">ID: 004-X</div>
+                <p class="text-xl md:text-3xl font-display italic mb-6 leading-none uppercase">
+                    "KRABOSPORT DEVELOPS SPORTS EVENTS, COMPETITIONS, AND ACTIVE EXPERIENCES."
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://krabo.world/" target="_blank"  class="industrial-tag bg-black text-white">WEBSITE</a>
+                    <a href="https://kroyal.world/author/KRABOSPORT" target="_blank"  class="border-4 border-black px-6 py-2 font-bold hover:bg-black hover:text-white transition-colors">KROYAL PAGE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-32 px-6 bg-brutal-black relative overflow-hidden" id="support">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="distorted-title text-5xl md:text-8xl text-center mb-16 text-white">SUPPORT</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="paper-scrap p-6 hover:rotate-0 transition-transform cursor-pointer relative group">
+                    <div class="absolute -top-3 -right-3 bg-black text-primary px-2 py-1 text-[10px] font-bold rotate-12">SOON</div>
+                    <div class="border-b-2 border-dashed border-black pb-2 mb-4">
+                        <div class="text-xs">ITEM: SUBSCRIPTION</div>
+                        <div class="text-2xl font-display uppercase">1 AZN</div>
+                    </div>
+                    <button class="mt-6 w-full py-2 bg-black text-white font-bold text-xs uppercase hover:bg-primary hover:text-black">SELECT_SUB</button>
+                </div>
+                <div class="paper-scrap p-6 rotate-2 hover:rotate-0 transition-transform cursor-pointer relative group">
+                    <div class="absolute -top-3 -right-3 bg-black text-primary px-2 py-1 text-[10px] font-bold rotate-12">SOON</div>
+                    <div class="border-b-2 border-dashed border-black pb-2 mb-4">
+                        <div class="text-xs">ITEM: SUBSCRIPTION</div>
+                        <div class="text-2xl font-display uppercase">5 AZN</div>
+                    </div>
+                    <button class="mt-6 w-full py-2 bg-black text-white font-bold text-xs uppercase hover:bg-primary hover:text-black">SELECT_SUB</button>
+                </div>
+                <div class="paper-scrap p-6 -rotate-1 hover:rotate-0 transition-transform cursor-pointer relative group">
+                    <div class="absolute -top-3 -right-3 bg-black text-primary px-2 py-1 text-[10px] font-bold rotate-12">SOON</div>
+                    <div class="border-b-2 border-dashed border-black pb-2 mb-4">
+                        <div class="text-xs">ITEM: SUBSCRIPTION</div>
+                        <div class="text-2xl font-display uppercase">10 AZN</div>
+                    </div>
+                    <button class="mt-6 w-full py-2 bg-black text-white font-bold text-xs uppercase hover:bg-primary hover:text-black">SELECT_SUB</button>
+                </div>
+            </div>
+            
+            <div class="mt-16 md:mt-20 max-w-xl mx-auto">
+                <div class="bg-primary p-1 border-4 border-white">
+                    <div class="bg-black text-white p-6">
+                        <label class="block text-[10px] uppercase font-bold mb-4 tracking-widest text-primary">Input One-Time Contribution // AZN</label>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <input class="flex-1 bg-white text-black border-none font-mono focus:ring-4 focus:ring-primary p-4" placeholder="0.00" type="number"/>
+                            <button class="bg-primary text-black font-display px-8 py-4 sm:py-0 hover:bg-white transition-colors uppercase">PUSH</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer" class="bg-white text-black py-12 md:py-20 px-6 border-t-[16px] border-primary">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12">
+        <div class="space-y-6">
+            <div class="bg-black text-white p-4 transform -rotate-2 inline-block">
+                <h4 class="font-display text-4xl md:text-6xl leading-[0.8]">CONNECT<br/>OR DIE</h4>
+            </div>
+            <div class="flex flex-wrap gap-2 md:gap-4">
+                <a  href="https://www.instagram.com/keyw_ael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">INSTA</a>
+                <a  href="https://x.com/Keyw_Ael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">X_APP</a>
+                <a  href="https://www.tiktok.com/@keywael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">TIKTOK</a>
+                <a  href="https://t.me/keyw_ael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">TELEGRAM</a>
+                <a  href="https://youtube.com/@keyw_ael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">YOUTUBE</a>
+                <a  href="https://kroyal.world/author/keywael" target="_blank" class="stamped-label !bg-black !text-white hover:!bg-primary hover:!text-black" href="#">KROYAL</a>
+            </div>
+        </div>
+        <div class="w-full md:w-auto text-left md:text-right">
+            <div class="bg-black text-white p-6 transform rotate-1 border-4 border-primary inline-block mb-6">
+            <div class="barcode mb-2 !bg-white">BY_YUNUS_A</div>
+            <div class="font-bold text-xs uppercase">© 2026 ALL RIGHTS RESERVED / NO PERMISSION NEEDED</div>
+        </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
